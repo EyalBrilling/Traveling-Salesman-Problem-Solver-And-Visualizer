@@ -8,13 +8,13 @@ from dist_functions import randomNumbersNormalInverseDisturbition
 from tsp_plot import plotTSP
 import matplotlib.pyplot as plt
 
-from torch import randint
+
 
 # file name to read Problem coordinated from
 TSP_FILE_PATH="tsp.txt"
 
 # number of generations to run
-GENERATIONS_NUM = 2000
+GENERATIONS_NUM = 5000
 NUM_CITIES = 48
 POP_SIZE = 100
 # number of pairs in elitism
@@ -216,7 +216,7 @@ def visuliazeRunWithGreedyAlgo(BestScoreList,avergeScoreList,greedyScore):
         if score == min(BestScoreList):
             ax.annotate(str(int(score)),xy=(scoreIndex+500,score+100),color= 'red',size='large')
             break
-        if scoreIndex %2000==0:
+        elif scoreIndex %2000==0:
             ax.annotate(str(int(score)),xy=(scoreIndex+1,score))
     plt.show()
 
@@ -249,10 +249,22 @@ def greedyAlgo(citiesCooridinates):
         currentTravel.append(bestCity)
         travelScore+=bestDistance
     return currentTravel,travelScore
+
+def plotTimings(generationNum,populationScore,population,citiesCooridinates):
+    if generationNum <500:
+        if generationNum%50:
+            bestChromosomeScore=min(populationScore)
+            bestChromosome=population[populationScore.index(bestChromosomeScore)]
+            plotTSP([bestChromosome],citiesCooridinates,1)
+    elif generationNum % 100==0:
+        bestChromosomeScore=min(populationScore)
+        bestChromosome=population[populationScore.index(bestChromosomeScore)]
+        plotTSP([bestChromosome],citiesCooridinates,1)
 def main():
     bestScoreList=[]
     averageScoreList=[]
     citiesCooridinates=TSPcitiesCoordinates(TSP_FILE_PATH)
+    citiesCooridinates = [[int(x) for x in coord] for coord in citiesCooridinates]
     population=initiatePopulation()
     for generationNum in range(GENERATIONS_NUM):
         populationScore = populationScorer(population,citiesCooridinates)
@@ -262,11 +274,15 @@ def main():
         population=mutantChildren + elitisimWinners
         bestScoreList.append(min(populationScore))
         averageScoreList.append(sum(populationScore)/POP_SIZE)
-    bestChromosomeScore=min(populationScore)
-    bestChromosome=population[populationScore.index(bestChromosomeScore)]
-    citiesCooridinates = [[int(x) for x in coord] for coord in citiesCooridinates]
+        plotTimings(generationNum,populationScore,population,citiesCooridinates)
+        if generationNum %100 == 0 :
+          bestChromosomeScore=min(populationScore)
+          bestChromosome=population[populationScore.index(bestChromosomeScore)]
+          plotTSP([bestChromosome],citiesCooridinates,1)
+   # bestChromosomeScore=min(populationScore)
+   # bestChromosome=population[populationScore.index(bestChromosomeScore)]
     printInfo(population,populationScore,generationNum,citiesCooridinates)
-    plotTSP([bestChromosome],citiesCooridinates,1)
+   # plotTSP([bestChromosome],citiesCooridinates,1)
     greedyTravel,greedyScore=greedyAlgo(citiesCooridinates)
     visuliazeRunWithGreedyAlgo(bestScoreList,averageScoreList,greedyScore)
 

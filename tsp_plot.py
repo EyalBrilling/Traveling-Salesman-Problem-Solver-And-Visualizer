@@ -20,7 +20,7 @@ def plotTSP(paths, points, num_iters=1):
         y.append(points[i][1])
     
     plt.plot(x, y, 'co')
-
+    
     # Set a scale for the arrow heads (there should be a reasonable default for this, WTF?)
     a_scale = float(max(x))/float(100)
 
@@ -54,9 +54,9 @@ def plotTSP(paths, points, num_iters=1):
     #Set axis too slitghtly larger than the set of x and y
     plt.xlim(0, max(x)*1.1)
     plt.ylim(0, max(y)*1.1)
-    plt.show()
-
-    plt.clf()
+    plt.show(block=False)
+    plt.pause(0.05)
+    plt.cla()
     
 
 
