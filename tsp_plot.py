@@ -13,7 +13,6 @@ def plotTSP(paths, points, num_iters=1):
 
     # Unpack the primary TSP path and transform it into a list of ordered 
     # coordinates
-    
     x = []; y = []
     for i in paths[0]:
         x.append(points[i][0])
