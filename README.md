@@ -1,4 +1,4 @@
-# Traveling-Salesman-Problem-Solver And Visualizer 
+# Traveling Salesman Problem Solver And Visualizer 
 
 ### A run on "att48" 
 
