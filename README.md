@@ -60,9 +60,10 @@ for example - under SCORE-WEIGHT of 5, chromosomes with score of 30,000 and 31,0
 
 ## Visualization
 As part of the implemtation, i made a visuliazer(using matplotlib) of the best chromosome in each generation. 
-gifs like the one shown will be made for each of your runs automaticlly,no change in code needed.
 
-showing the gif does make the algorithm MUCH slower. 
+**gifs like the one shown will be made for each of your runs automaticlly,no change in code needed.**
+
+Something to notice,showing the gif does make the algorithm MUCH slower. 
 
 If you want to test it's speed,remove row 279 - which calls the plotting function "plotTimings".
 
