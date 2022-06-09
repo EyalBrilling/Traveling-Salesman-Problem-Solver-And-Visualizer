@@ -5,7 +5,7 @@
 <p align="center"><img src="https://github.com/EyalBrilling/Traveling-Salesman-Problem-Solver/blob/master/media/att48.gif" width="400" height="400" /></p>
 
 ## What this is 
-This is an implemtation of a genetic algorithm to the travelling salesman problem Plus a visulizer of the algorithm run.
+This is an implementation of a genetic algorithm to the travelling salesman problem Plus a visulizer of the algorithm run.
 
 The decisions about the different algorithm parts were done after throught research of different papers. 
 
