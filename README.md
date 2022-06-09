@@ -33,7 +33,7 @@ Do notice,the order of the points doesn't matter. In the travelling sales proble
 for an example,i recommend to look at the "48att.txt" file.
 
 ## If you want to try the code on other input files
-The algorithm itself is modular and will work on any input file. **there are** two changes you need to do to make it work on other input files:
+The algorithm itself is modular and will work on any input file. **there are** two variable changes you need to do to make it read other input files correctly:
 1) Change the variable "TSP_FILE_PATH" on **line 15** to your file path.
 2) Change the variable "NUM_CITIES" on **line 19** to the number of coordinates in your input file.
 The code will work even if you won't change this variable,but it will take number of points as the value of the variable.
