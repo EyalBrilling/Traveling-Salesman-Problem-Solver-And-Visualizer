@@ -69,5 +69,5 @@ If you want to test it's speed,remove row 279 - which calls the plotting functio
 Also,**in the end of each run - you will get a graph of how the travel score changes thoughout the algorithm** to help you understand when the algorithm gets stuck in local minimum.
 
 An example - 
-<p align="center"><img src="https://github.com/EyalBrilling/Traveling-Salesman-Problem-Solver/blob/master/media/runGraph.PNG" width="300" height="300" /></p>
+<p align="center"><img src="https://github.com/EyalBrilling/Traveling-Salesman-Problem-Solver/blob/master/media/runGraph.PNG" width="400" height="300" /></p>
 
