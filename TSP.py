@@ -263,7 +263,6 @@ def plotTimings(generationNum,populationScore,population,citiesCooridinates):
         bestChromosome=population[populationScore.index(bestChromosomeScore)]
         plotTSP([bestChromosome],citiesCooridinates,1)
 def main():
-    for e in range(10):
        bestScoreList=[]
        averageScoreList=[]
        citiesCooridinates=TSPcitiesCoordinates(TSP_FILE_PATH)
