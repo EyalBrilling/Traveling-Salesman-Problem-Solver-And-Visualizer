@@ -39,7 +39,7 @@ The algorithm itself is modular and will work on any input file. **there are** t
 The code will work even if you won't change this variable,but it will take number of points as the value of the variable.
 
 ## If you want to check yourself how different variables effect the algorithm
-##### All of the CAPS-LOCKED vairables can be changed. I will explain the important ones:
+**All of the CAPS-LOCKED vairables can be changed. I will explain the important ones**:
 
 GENERATIONS_NUM - The number of generations in the algorithm until stop
 
