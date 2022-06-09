@@ -21,7 +21,7 @@ Do notice,the order of the points doesn't matter. In the travelling sales proble
 for an example,i recommend to look at the "48att.txt" file.
 
 ## If you want to try the code on other input files
-The algorithm itself is modular and will work on any input file. ** there are ** two changed you need to do make work:
+The algorithm itself is modular and will work on any input file. **there are** two changes you need to do to make it work on other input files:
 1) Change the variable "TSP_FILE_PATH" to your file path.
 2) Change the variable "NUM_CITIES" to the number of coordinates in your input file.
 The code will work even if you won't change this variable,but it will take number of points as the value of the variable.
@@ -41,6 +41,6 @@ QX4_MIN_BLOCK_SIZE,QX4_MAX_BLOCK_SIZE - As part of Qx4 crossover stage, a random
 
 Not recommanded to play with before reading about this crossover.
 
-###### Read about Ox4 crossover and its variants in the following paper [HERE](https://www.redalyc.org/pdf/2652/265219618002.pdf)
+##### Read about Ox4 crossover and its variants in the following paper [HERE](https://www.redalyc.org/pdf/2652/265219618002.pdf)
 
 ##### Read about distance startegy elitism in the following paper [HERE](https://ieeexplore.ieee.org/document/8426051)
