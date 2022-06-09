@@ -27,7 +27,7 @@ The algorithm itself is modular and will work on any input file. ** there are **
 The code will work even if you won't change this variable,but it will take number of points as the value of the variable.
 
 ## If you want to check yourself how different variables effect the algorithm
-All of the CAPS-LOCKED vairables can be changed. I will explain the important ones:
+##### All of the CAPS-LOCKED vairables can be changed. I will explain the important ones:
 
 GENERATIONS_NUM - The number of generations in the algorithm until stop
 
@@ -41,6 +41,6 @@ QX4_MIN_BLOCK_SIZE,QX4_MAX_BLOCK_SIZE - As part of Qx4 crossover stage, a random
 
 Not recommanded to play with before reading about this crossover.
 
-Read about Ox4 crossover and its variants in the following paper [HERE](https://www.redalyc.org/pdf/2652/265219618002.pdf)
+###### Read about Ox4 crossover and its variants in the following paper [HERE](https://www.redalyc.org/pdf/2652/265219618002.pdf)
 
-Read about distance startegy elitism in the following paper [HERE](https://ieeexplore.ieee.org/document/8426051)
+##### Read about distance startegy elitism in the following paper [HERE](https://ieeexplore.ieee.org/document/8426051)
