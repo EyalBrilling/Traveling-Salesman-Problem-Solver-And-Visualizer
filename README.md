@@ -1,26 +1,22 @@
 # Traveling-Salesman-Problem-Solver And Visualizer 
 
-## A run on "att48" 
+### A run on "att48" 
 
 <p align="center"><img src="https://github.com/EyalBrilling/Traveling-Salesman-Problem-Solver/blob/master/media/att48.gif" width="400" height="400" /></p>
 
 ## What this is 
-This is an implemtation for a genetic algorithm to the travelling salesman problem Plus a visulizer of the 
-The decisions about the different following algorithm parts were done after throught research of different options. 
+This is an implemtation for a genetic algorithm to the travelling salesman problem Plus a visulizer of the algorithm run.
+
+The decisions about the different algorithm parts were done after throught research of different papers. 
 
 **The crossover** i used is order crossover and specificly the Ox4 variant.
 
-The general idea is to take a block of random size from chromosome 1 and block of random size from chromosome 2. than you create 2 children by inserting the block of chromosome 1 to chromosome 2 and vice-versa.  [paper](https://www.redalyc.org/pdf/2652/265219618002.pdf)
+The general idea is to take a block of random size from chromosome 1 and block of random size from chromosome 2. than you create 2 children by inserting the block of chromosome 1 to chromosome 2 and vice-versa. [paper](https://www.redalyc.org/pdf/2652/265219618002.pdf)
 
 **The mutation** i used is RSM with a little variant of my own to check for bigger sections - improving the algorithm abilty to get out of local minimums. [paper](https://arxiv.org/ftp/arxiv/papers/1203/1203.3099.pdf)
 
 **The elitism** i used is distance startegy elitism. 
-You take the best scored chromosome and the worst scored chromosome and keep them to the next generation.
-
-As part of the research,the different algorithm parameters where of 
-
-
-
+You take the best scored chromosome and the worst scored chromosome and keep them to the next generation. [paper](https://ieeexplore.ieee.org/document/8426051)
 
 ## How to use
 the code takes an input file in the following format:
