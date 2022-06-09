@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 # file name to read Problem coordinated from
-TSP_FILE_PATH="tsp.txt"
+TSP_FILE_PATH="att48.txt"
 
 # number of generations to run
 GENERATIONS_NUM = 5000
