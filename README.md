@@ -41,19 +41,19 @@ The code will work even if you won't change this variable,but it will take numbe
 ## If you want to check yourself how different variables effect the algorithm
 **All of the CAPS-LOCKED vairables can be changed. I will explain the important ones**:
 
-GENERATIONS_NUM - The number of generations in the algorithm until stop
+**GENERATIONS_NUM** - The number of generations in the algorithm until stop
 
-POP_SIZE - The number of chromosomes in a population
+**POP_SIZE** - The number of chromosomes in a population
 
-ELITISIM_NUM - The number of pairs to undergo the elitism stage.
+**ELITISIM_NUM** - The number of pairs to undergo the elitism stage.
 
-MUTATION_PROB - The probabilty for a chromosome to undergo mutation
+**MUTATION_PROB** - The probabilty for a chromosome to undergo mutation
 
-QX4_MIN_BLOCK_SIZE,QX4_MAX_BLOCK_SIZE - As part of Qx4 crossover stage, a random block size is chosen based on specific disturbtion. 
+**QX4_MIN_BLOCK_SIZE,QX4_MAX_BLOCK_SIZE** - As part of Qx4 crossover stage, a random block size is chosen based on specific disturbtion. 
 
 Not recommanded to play with before reading about this crossover.
 
-SCORE-WEIGHT - The bigger the value is, bigger the change differance of a chromosome to be chosen to a pairing, in comparassion to his better score counterpart. 
+**SCORE-WEIGHT** - The bigger the value is, bigger the change differance of a chromosome to be chosen to a pairing, in comparassion to his better score counterpart. 
 
 for example - under SCORE-WEIGHT of 5, chromosomes with score of 30,000 and 31,000 will have a very close probablity to be chosen for a pairing. Under SCORE-WEIGHT of 30, the chromosome with score of 31,000 will practically never be chosen.
 
